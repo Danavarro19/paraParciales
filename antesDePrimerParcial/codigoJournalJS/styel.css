@@ -1,9 +1,15 @@
 /*
 position relative:
     - se mueve con prierdades top, left, bottom, right y el espacio donde estaba queda ahi  vacio
-    -
-*/
+    - solo funciona si el padre tiene un lato definido, eso no aplica para el width.
+    - se calcula respecto a la posicion inicial de elemento
 
+position absolute:
+    - al aplicarlo, su espacio en el flujo se convierte en 0.
+    - el ancho esta definido por su contenido.
+    - se posiciona en relacion al ancesto mas cercano que esta posicionado.
+    - si ninguno esta posicionado, se calcula respecto al vp.
+*/
 
 * {
     margin: 0;
