@@ -9,6 +9,8 @@ position absolute:
     - el ancho esta definido por su contenido.
     - se posiciona en relacion al ancesto mas cercano que esta posicionado.
     - si ninguno esta posicionado, se calcula respecto al vp.
+z-indez:
+    - 
 */
 
 * {
