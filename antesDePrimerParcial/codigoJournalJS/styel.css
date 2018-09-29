@@ -1,7 +1,7 @@
 /*
 position relative:
     - se mueve con prierdades top, left, bottom, right y el espacio donde estaba queda ahi  vacio
-    - solo funciona si el padre tiene un lato definido, eso no aplica para el width.
+    - solo funciona si el padre tiene un alto definido, eso no aplica para el width.
     - se calcula respecto a la posicion inicial de elemento
 
 position absolute:
@@ -10,7 +10,7 @@ position absolute:
     - se posiciona en relacion al ancesto mas cercano que esta posicionado.
     - si ninguno esta posicionado, se calcula respecto al vp.
 z-indez:
-    - 
+    - Solo funciona para elementos que ya estan posicionados.
 */
 
 * {
@@ -58,7 +58,7 @@ z-indez:
 }
 
 .gradient-bg{
-    background: linear-gradient(0deg, #e66587 0%, #f09458 100%);
+    background: linear-gradient(90deg, #e66587 0%, #f09458 100%);
 }
 
 .row {
@@ -151,6 +151,14 @@ body:after{
     align-items: center;
 }
 
+.section-1 .container > div{
+    grid-gap: 40px;
+}
+
+.rows-4{
+    grid-template-columns: repeat(4,1fr);
+}
+
 .rows-3{
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -163,12 +171,73 @@ body:after{
     grid-template-columns: 1fr 2fr;
 }
 
+.colums-2{
+    grid-template-rows: 1fr 1fr;
+}
+
 .section-1 {
-    height: 311px;
+    height: auto;
     width: 100%;
     background-color: #ffffff;
+    color: #777777;
+    padding: 4%;
+} 
+
+h4{
+    color: #222222;
+    margin: 0 0 20px 0;
+    font-size: 14px;
 }
 
 .icon:hover{
     background: linear-gradient(0deg, #e66587 0%, #f09458 100%);
+    color: #ffffff;
 }
+
+.icon:hover i {
+    color: #ffffff;
+}
+
+.icon{
+    width: 60px;
+    height: 60px;
+    border: 1px solid rgba(194, 188, 188, 0.63);
+}
+
+.section-1 i{
+    color: #e66587;
+}
+
+.section-2{
+    width: 100%;
+    height: 956px;
+}
+
+.img {
+    background-image: url(img/s1.jpg);
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-position: center;
+}
+
+.section-2 .grid >div{
+    width: 100%;
+    height: 193px;
+    max-width: 263px;
+}
+
+.img > div{
+    visibility: hidden;
+}
+
+.img:hover > div{
+    visibility: visible;
+    background: #ffffff9f;
+}
+
+@media screen and (max-width: 1360px) {
+    .wrapper{
+        margin: 80px 90px;
+        width: auto;
+    }
+  }
