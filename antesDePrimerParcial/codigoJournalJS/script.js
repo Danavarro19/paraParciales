@@ -32,6 +32,32 @@ var calcTabla = function(evento){
 }
 
 var calcPhi = function(Tabla){
-    
+    return tabla[1];
 }
 
+
+/*function listing_types(array){
+    return array.map(element => typeof(element))
+            .reduce((dictionary, element) => { dictionary[element] = dictionary[element] ?
+            dictionary[element] +1 : 1;
+            return dictionary;
+          }, {});
+  }*/
+
+array1 = [1,2,3,4,5,6,7,8,9,10];
+
+/*array1.forEach(element => { //si se quiere un el index, se pone a la par y con parentesislo dos 
+    console.log(element);
+});*/
+
+//var filtro = array1.filter(age => age >= 10); //para filtrar
+
+/*var pruebaMapa = array1
+    .map(numero => numero*2)
+    .map(numero => Math.sqrt(numero));*/
+
+/*var sortArray = array1.sort((a,b) => (a > b ? 1 : -1));*/
+
+/*var sortArray = array1.sort((a,b) => (a-b));*/
+
+var suma = array1.reduce( (total,numero) => total + numero ,0);

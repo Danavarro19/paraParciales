@@ -9,7 +9,10 @@ position absolute:
     - el ancho esta definido por su contenido.
     - se posiciona en relacion al ancesto mas cercano que esta posicionado.
     - si ninguno esta posicionado, se calcula respecto al vp.
-z-indez:
+position sticky:
+    - Hace que los elemtos se muevan con el scroll, pero solo mientras el contenedor este en el vp, si no desaparece
+    - necesita que 
+    z-indez:
     - Solo funciona para elementos que ya estan posicionados.
 */
 
