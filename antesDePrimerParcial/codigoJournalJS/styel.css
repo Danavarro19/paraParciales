@@ -12,7 +12,7 @@ position absolute:
 position sticky:
     - Hace que los elemtos se muevan con el scroll, pero solo mientras el contenedor este en el vp, si no desaparece
     - necesita que 
-    z-indez:
+z-indez:
     - Solo funciona para elementos que ya estan posicionados.
 */
 
@@ -170,6 +170,10 @@ body:after{
 
 .grid-gap{
     grid-gap:35px;
+}
+
+.smooth-transition{
+    transition: 0.2s ease;
 }
 
 .section-1 .container > div{
@@ -379,5 +383,3 @@ h6{
           height: 600px;
       }
   }
-
-

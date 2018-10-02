@@ -44,13 +44,13 @@ var calcPhi = function(Tabla){
           }, {});
   }*/
 
-array1 = [1,2,3,4,5,6,7,8,9,10];
+array1 = [1,21,3,45,5,6,7,80,9,10,78];
 
 /*array1.forEach(element => { //si se quiere un el index, se pone a la par y con parentesislo dos 
     console.log(element);
 });*/
 
-//var filtro = array1.filter(age => age >= 10); //para filtrar
+var filtro = array1.filter(numero => numero >= 10); //para filtrar
 
 /*var pruebaMapa = array1
     .map(numero => numero*2)
