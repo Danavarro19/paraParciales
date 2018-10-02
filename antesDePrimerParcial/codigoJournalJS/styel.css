@@ -36,13 +36,21 @@ z-indez:
     font-weight: 300;
 }
 
+.p-absolute{
+    position: absolute;
+}
+
+.bg-white{
+    background-color: white;
+}
+
 .button {
     cursor: pointer;
     border-radius: 20px;
     border: 1px solid white;
     padding: 13px 23px;
     background: none;
-    font-size: 15px;
+    font-size: 14px;
     color: #ffffff;
 }
 
@@ -266,6 +274,15 @@ h6{
 .section-3{
     width: 100%;
     height: 500px;
+    position: relative;
+}
+
+.section-3 .p-absolute{
+    height: 250px;
+    max-width: 50%;
+    padding: 60px;
+    top: 25%;
+    left: 25%;
 }
 
 .flex50 {
@@ -305,6 +322,27 @@ h6{
         flex-direction: column;
         align-items: flex-start;
     }
+  }
+
+  @media screen and (max-width: 1050px) {
+      #story-bg{
+          position: absolute;
+      }
+
+      .section-3{
+          text-align: center;
+      }
+
+      .section-3 .flex50{
+          flex: 1 1 100%;
+      }
+
+      .section-3 .p-absolute{
+          height: auto;
+          max-width: 80%;
+          left: 10%;
+      }
+      
   }
 
   @media screen and (max-width: 600px) {

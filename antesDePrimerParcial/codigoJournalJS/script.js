@@ -34,3 +34,4 @@ var calcTabla = function(evento){
 var calcPhi = function(Tabla){
     
 }
+
